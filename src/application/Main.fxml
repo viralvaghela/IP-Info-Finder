@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="461.0" prefWidth="499.0" style="`: #0da4db;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label layoutX="186.0" layoutY="14.0" prefHeight="58.0" prefWidth="128.0" text="IP Info" textFill="#0da4db">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnGetDetail" buttonType="RAISED" layoutX="334.0" layoutY="110.0" onAction="#getData" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #0da4db;" text="Get Details">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="7.0" layoutY="161.0" prefHeight="292.0" prefWidth="486.0" style="-fx-background-color: #0da4db;">
+         <children>
+            <Label fx:id="lblCountry" layoutX="14.0" layoutY="31.0" prefHeight="36.0" prefWidth="452.0" text="Country :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRegion" layoutX="14.0" layoutY="67.0" prefHeight="36.0" prefWidth="452.0" text="Region :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCity" layoutX="14.0" layoutY="112.0" prefHeight="36.0" prefWidth="234.0" text="City :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTimezone" layoutX="14.0" layoutY="148.0" prefHeight="36.0" prefWidth="452.0" text="Timezone : ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblIsp" layoutX="14.0" layoutY="184.0" prefHeight="36.0" prefWidth="452.0" text="ISP :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblIp" layoutX="14.0" layoutY="220.0" prefHeight="36.0" prefWidth="452.0" text="IP : ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <JFXTextField fx:id="txtIp" labelFloat="true" layoutX="14.0" layoutY="110.0" prefHeight="36.0" prefWidth="312.0" promptText="127.0.0.1" />
+   </children>
+</AnchorPane>
